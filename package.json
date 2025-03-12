@@ -16,5 +16,8 @@
     "url": "https://github.com/Hondone01/arieTec/issues"
   },
   "homepage": "https://github.com/Hondone01/arieTec#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.85.1"
+  }
 }
