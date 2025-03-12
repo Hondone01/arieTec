@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(199, 194, 194);
+}
+.carousel-inner {
+    margin-top: 30px;
+    margin-left: 370px;
+    width: 50%; /* Asegura que ocupe todo el ancho */
+    height: 400px; /* Puedes modificar esta altura */
+  }
+  
+  .carousel-inner img {
+    border-radius: 8px;
+    width: 50%;
+    height: 400px; /* Mantiene la relación de aspecto de las imágenes */
+  }
+  
