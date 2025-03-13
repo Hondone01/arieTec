@@ -1,7 +1,7 @@
 @use "../../layout/headermobile" as *;
 
 
-@media (min-width: 425px) and (max-width: 460px) {
+@media (min-width: 425px) and (max-width: 560px) {
  @include headermobile;
     body{
        background-color: rgb(212, 230, 245);

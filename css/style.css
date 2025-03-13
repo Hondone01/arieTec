@@ -26,7 +26,7 @@
     border-radius: 5px; /* Opcional: cambia el radio de las esquinas si lo deseas */
   }
 }
-@media (min-width: 425px) and (max-width: 460px) {
+@media (min-width: 425px) and (max-width: 560px) {
   .logoArservice {
     width: 50px;
     height: 50px;
