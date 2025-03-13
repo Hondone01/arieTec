@@ -1,7 +1,7 @@
 @media (min-width: 320px) and (max-width: 374px) {
   .logoArservice {
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 15px;
     border-radius: 8px;
   }
   body {
@@ -14,8 +14,8 @@
 }
 @media (min-width: 375px) and (max-width: 424px) {
   .logoArservice {
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 15px;
     border-radius: 8px;
   }
   body {
@@ -28,8 +28,8 @@
 }
 @media (min-width: 425px) and (max-width: 560px) {
   .logoArservice {
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 15px;
     border-radius: 8px;
   }
   body {
