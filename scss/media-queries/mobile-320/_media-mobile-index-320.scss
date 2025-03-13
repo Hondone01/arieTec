@@ -1,19 +1,15 @@
 @media (min-width: 320px) and (max-width: 374px) {
     body{
        background-color: rgb(212, 230, 245);
-       .contornoHeader{
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 300px;
-        height: 80px;
-        border: solid 1px cadetblue;
-       }
-       .logo{
-        margin-top: 10px;
-        margin-left: 10px;
+       .navbar-toggler {
+        border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
+        border-radius: 5px; /* Opcional: cambia el radio de las esquinas si lo deseas */
+    }
+       .logoArservice{
         width: 50px;
         height: 50px;
         border-radius: 20px;
        }
+       
     }
 }
