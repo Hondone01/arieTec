@@ -1,2 +1,5 @@
 @use "media-queries/mobile-320/_media-mobile-index-320" as *;
+@use "media-queries/mobile-375/_media-mobile-index-375" as *;
+@use "media-queries/mobile-425/_media-mobile-index-425" as *;
+
 @use "layout/headermobile" as *;
