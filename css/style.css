@@ -1,9 +1,10 @@
+.logoArservice {
+  max-height: 50px;
+  width: auto;
+  border-radius: 8px;
+}
+
 @media (min-width: 320px) and (max-width: 374px) {
-  .logoArservice {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-  }
   body {
     background-color: rgb(212, 230, 245);
   }
@@ -12,12 +13,13 @@
     border-radius: 5px; /* Opcional: cambia el radio de las esquinas si lo deseas */
   }
 }
+.logoArservice {
+  max-height: 50px;
+  width: auto;
+  border-radius: 8px;
+}
+
 @media (min-width: 375px) and (max-width: 424px) {
-  .logoArservice {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-  }
   body {
     background-color: rgb(212, 230, 245);
   }
@@ -26,12 +28,13 @@
     border-radius: 5px; /* Opcional: cambia el radio de las esquinas si lo deseas */
   }
 }
+.logoArservice {
+  max-height: 50px;
+  width: auto;
+  border-radius: 8px;
+}
+
 @media (min-width: 425px) and (max-width: 560px) {
-  .logoArservice {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-  }
   body {
     background-color: rgb(212, 230, 245);
   }

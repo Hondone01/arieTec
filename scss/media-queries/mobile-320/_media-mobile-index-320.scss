@@ -1,9 +1,10 @@
 @use "../../layout/headermobile" as *;
 
-
+@include headermobile;
 @media (min-width: 320px) and (max-width: 374px) {
- @include headermobile;
+ 
     body{
+    //  @include headermobile;
        background-color: rgb(212, 230, 245);
        .navbar-toggler {
         border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
