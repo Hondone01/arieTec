@@ -1,15 +1,15 @@
 @media (min-width: 320px) and (max-width: 374px) {
+  .logoArservice {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+  }
   body {
     background-color: rgb(212, 230, 245);
   }
   body .navbar-toggler {
     border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
     border-radius: 5px; /* Opcional: cambia el radio de las esquinas si lo deseas */
-  }
-  body .logoArservice {
-    width: 50px;
-    height: 50px;
-    border-radius: 20px;
   }
 }
 
