@@ -6,7 +6,7 @@
 
 @media (min-width: 320px) and (max-width: 374px) {
   body {
-    background-color: rgb(212, 230, 245);
+    background-color: rgb(182, 222, 255);
   }
   body .navbar-toggler {
     border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
@@ -21,7 +21,7 @@
 
 @media (min-width: 375px) and (max-width: 424px) {
   body {
-    background-color: rgb(212, 230, 245);
+    background-color: rgb(182, 222, 255);
   }
   body .navbar-toggler {
     border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
@@ -36,7 +36,7 @@
 
 @media (min-width: 425px) and (max-width: 560px) {
   body {
-    background-color: rgb(212, 230, 245);
+    background-color: rgb(182, 222, 255);
   }
   body .navbar-toggler {
     border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
