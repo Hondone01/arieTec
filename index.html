@@ -1,171 +1,123 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="blue">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/style.css">
-   
-    <title>ariTecOnline</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ariTecOnline</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
-  <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <img class="logoArservice" src="assets/arService.png" alt="arServiceLogo" width="50px" height="50px">
-      <h5 class="mx-auto">AR-SERVICE</h5>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Cotización
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Formulario</a></li>
-                <li><a class="dropdown-item" href="#">Correo</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-              </ul>
-            </li>
-          </ul>
-         
-        </div>
-      </div>
+  <!-- HEADER ESCRITORIO SIN BOOTSTRAP -->
+  <header class="header-desktop">
+    <div class="logo-container">
+      <img src="assets/arService.png" alt="Logo AR-SERVICE" />
+      <span>AR-SERVICE</span>
     </div>
-  </nav>
+    <nav class="nav-desktop">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carrusel -->
+  <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/fotoPaint1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint3.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint4.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint5.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint6.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint7.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint8.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint9.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint10.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint11.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/fotoPaint13.jpg" class="d-block w-100" alt="...">
-      </div>
+      <div class="carousel-item active"><img src="assets/fotoPaint1.jpg" class="d-block w-100 carousel-img" alt="Foto 1"></div>
+      <div class="carousel-item"><img src="assets/fotoPaint2.jpg" class="d-block w-100 carousel-img" alt="Foto 2"></div>
+      <div class="carousel-item"><img src="assets/fotoPaint3.jpg" class="d-block w-100 carousel-img" alt="Foto 3"></div>
+      <div class="carousel-item"><img src="assets/fotoPaint4.jpg" class="d-block w-100 carousel-img" alt="Foto 4"></div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="carousel-control-prev-icon"></span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="carousel-control-next-icon"></span>
     </button>
   </div>
 
-<!-- Presentación -->
-<section class="p-3 text-center bg-light mt-5">
-  <h2 class="mb-3">¡Bienvenido a AR-SERVICE!</h2>
-  <p>
-    Somos especialistas en reparación de electrodomésticos de todo tipo: desde pequeños aparatos hasta equipos industriales. Con atención personalizada, soluciones rápidas y compromiso profesional, AR-SERVICE está aquí para ayudarte a recuperar el funcionamiento de tus dispositivos. ¡Consultanos por WhatsApp y pedí tu presupuesto sin compromiso!
-  </p>
-</section>
-  
+  <!-- Presentación -->
+  <section id="inicio" class="p-4 text-center bg-light mt-5">
+    <h2 class="mb-3">¡Bienvenido a AR-SERVICE!</h2>
+    <p>Somos especialistas en reparación de electrodomésticos de todo tipo...</p>
+  </section>
+
   <!-- Servicios -->
-<section class="container my-4">
-  <h3 class="text-center mb-3">Nuestros Servicios</h3>
-  <div class="row row-cols-1 row-cols-md-2 g-3">
-    <div class="col">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Reparación de heladeras</h5>
-          <p class="card-text">Solución a problemas eléctricos y de refrigeración.</p>
-        </div>
+  <section class="container my-4">
+    <h3 class="text-center mb-3">Nuestros Servicios</h3>
+    <div class="row row-cols-1 row-cols-md-2 g-3">
+      <div class="col">
+        <a href="html/musica.html" class="text-decoration-none text-dark">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Equipos de música</h5>
+              <p class="card-text">Reparación de sonido, CD, USB y más.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="html/microondas.html" class="text-decoration-none text-dark">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Microondas</h5>
+              <p class="card-text">Diagnóstico y reparación de fallas comunes.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="html/pequenos.html" class="text-decoration-none text-dark">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Pequeños electrodomésticos</h5>
+              <p class="card-text">Desde licuadoras hasta ventiladores.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="html/domicilio.html" class="text-decoration-none text-dark">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Reparación a domicilio</h5>
+              <p class="card-text">Consultá por atención sin moverte.</p>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Microondas y hornos eléctricos</h5>
-          <p class="card-text">Diagnóstico y reparación de fallas comunes.</p>
-        </div>
-      </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="bg-white p-4 text-center">
+    <h3>Sobre nosotros</h3>
+    <p>En AR-SERVICE llevamos años ofreciendo soluciones rápidas, profesionales y honestas.</p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="text-center p-4 bg-light">
+    <h4>¿Querés contactarnos directamente?</h4>
+    <p>Escaneá el código QR o escribinos por WhatsApp haciendo clic en el botón.</p>
+    <img src="assets/whatsapp_qr_ar_service.png" alt="QR WhatsApp AR-Service" width="200" class="my-3">
+    <div>
+      <a href="https://wa.me/5491123321656" target="_blank" class="btn btn-success">Enviar mensaje por WhatsApp</a>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Pequeños electrodomésticos</h5>
-          <p class="card-text">Desde licuadoras hasta cafeteras y ventiladores.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">Reparación a domicilio</h5>
-          <p class="card-text">Consultá por atención en tu hogar sin moverte.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contacto -->
-<section class="text-center p-4 bg-light">
-  <h4>¿Querés contactarnos directamente?</h4>
-  <p>Escaneá el código QR o escribinos por WhatsApp haciendo clic en el botón.</p>
-  <img src="assets/whatsapp_qr_ar_service.png" alt="QR WhatsApp AR-Service" width="200" class="my-3">
-  <div>
-    <a href="https://wa.me/5491123321656" target="_blank" class="btn btn-success">Enviar mensaje por WhatsApp</a>
-  </div>
-</section>
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-white">
+    <p>© 2025 AR-SERVICE - Reparación de Electrodomésticos</p>
+    <p>Zona de cobertura: CABA y alrededores</p>
+  </footer>
 
-<!-- Footer -->
-<footer class="text-center p-3 bg-dark text-white">
-  <p>© 2025 AR-SERVICE - Reparación de Electrodomésticos</p>
-  <p>Zona de cobertura: CABA y alrededores</p>
-</footer>
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5491123321656" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  </a>
 
-<!-- Botón flotante WhatsApp -->
-<a href="https://wa.me/5491123321656" class="whatsapp-float" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-</a>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

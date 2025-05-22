@@ -1,50 +1,29 @@
+/* === ESTILOS GENERALES (MOBILE FIRST) === */
+
+body {
+  background-color: #f8f9fa; /* fondo claro base */
+  margin-top: 80px; /* compensar el navbar fijo */
+  font-family: Arial, sans-serif;
+}
+
 .logoArservice {
   max-height: 50px;
   width: auto;
   border-radius: 8px;
 }
 
-@media (min-width: 320px) and (max-width: 374px) {
-  body {
-    background-color: rgb(182, 222, 255);
-  }
-  body .navbar-toggler {
-    border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
-    border-radius: 5px; /* Opcional: cambia el radio de las esquinas si lo deseas */
-  }
-}
-.logoArservice {
-  max-height: 50px;
-  width: auto;
-  border-radius: 8px;
+/* Navbar móvil */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #ccc;
 }
 
-@media (min-width: 375px) and (max-width: 424px) {
-  body {
-    background-color: rgb(182, 222, 255);
-  }
-  body .navbar-toggler {
-    border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
-    border-radius: 5px; /* Opcional: cambia el radio de las esquinas si lo deseas */
-  }
-}
-.logoArservice {
-  max-height: 50px;
-  width: auto;
-  border-radius: 8px;
+.navbar-toggler {
+  border: 2px solid #498be2;
+  border-radius: 5px;
 }
 
-@media (min-width: 425px) and (max-width: 560px) {
-  body {
-    background-color: rgb(182, 222, 255);
-  }
-  body .navbar-toggler {
-    border: 2px solid #498be2; /* Color del borde (puedes cambiar el valor de color) */
-    border-radius: 5px; /* Opcional: cambia el radio de las esquinas si lo deseas */
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+/* Botón flotante WhatsApp */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -70,4 +49,103 @@
   0% { transform: scale(1); }
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
+}
+
+/* === MEDIA QUERIES === */
+
+/* Smartphones pequeños */
+@media (max-width: 374px) {
+  body {
+    background-color: rgb(182, 222, 255);
+  }
+}
+
+/* Smartphones medianos */
+@media (min-width: 375px) and (max-width: 424px) {
+  body {
+    background-color: rgb(182, 222, 255);
+  }
+}
+
+/* Smartphones grandes / phablets */
+@media (min-width: 425px) and (max-width: 560px) {
+  body {
+    background-color: rgb(182, 222, 255);
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 768px) {
+  /* Aquí podés agregar estilos específicos para tablets si querés */
+}
+
+/* === HEADER ESCRITORIO SIN BOOTSTRAP === */
+@media (min-width: 1024px) {
+  header.header-desktop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e8f1ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    border-bottom: 2px solid #6fa8dc;
+    z-index: 1000;
+  }
+
+  .header-desktop .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-desktop .logo-container img {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .header-desktop .logo-container span {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  .nav-desktop {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-desktop a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .nav-desktop a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #498be2;
+    transition: width 0.3s ease;
+  }
+
+  .nav-desktop a:hover {
+    color: #498be2;
+  }
+
+  .nav-desktop a:hover::after {
+    width: 100%;
+  }
+
+  /* Ocultamos navbar móvil en escritorio */
+  .navbar {
+    display: none !important;
+  }
 }
