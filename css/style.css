@@ -23,6 +23,10 @@ body {
   border-radius: 5px;
 }
 
+.img-fluid .rounded{
+  border-radius: 5px;
+}
+
 /* Botón flotante WhatsApp */
 .whatsapp-float {
   position: fixed;
@@ -164,4 +168,5 @@ body {
   .navbar {
     display: none !important;
   }
+
 }
