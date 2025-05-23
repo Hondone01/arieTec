@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reparación a domicilio - AR-SERVICE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+      <!-- HEADER ESCRITORIO SIN BOOTSTRAP -->
+  <header class="header-desktop">
+    <div class="logo-container">
+      <img src="../assets/arService.png" alt="Logo AR-SERVICE" />
+      <span>AR-SERVICE</span>
+    </div>
+    <nav class="nav-desktop">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- NAVBAR MÓVIL CON BOOTSTRAP -->
+<nav class="navbar fixed-top bg-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="../assets/arService.png" alt="Logo AR-SERVICE" class="me-2 logoArservice" width="50" height="50" />
+      <span class="fw-bold">AR-SERVICE</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuMobile">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">AR-SERVICE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- archivo: reparacion.html -->
+<section id="reparacion-domicilio" class="container mt-5">
+  <h2>Reparación a Domicilio</h2>
+  <p>Completá el siguiente formulario y nos pondremos en contacto para coordinar una visita.</p>
+
+  <form action="https://formsubmit.co/rmartinmantelli@gmail.com" method="POST" enctype="multipart/form-data">
+    <!-- Anti-bot -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Redirección tras enviar -->
+    <input type="hidden" name="_next" value="https://tusitio.github.io/gracias.html">
+
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+    </div>
+
+    <div>
+      <label for="cp">Código Postal:</label>
+      <input type="text" id="cp" name="cp" required>
+    </div>
+
+    <div>
+      <label for="falla">Falla o Problema:</label>
+      <input type="text" id="falla" name="falla" required>
+    </div>
+
+    <div>
+      <label for="descripcion">Descripción detallada:</label>
+      <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+    </div>
+
+    <div>
+      <label for="imagenes">Imágenes del problema (opcional):</label>
+      <input type="file" id="imagenes" name="imagenes" accept="image/*">
+    </div>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+</section>
+
+
+
+
+<!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-white">
+    <p>© 2025 AR-SERVICE - Reparación de Electrodomésticos</p>
+    <p>Zona de cobertura: CABA y alrededores</p>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5491123321656" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
