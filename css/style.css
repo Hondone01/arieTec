@@ -87,6 +87,10 @@ form button {
   margin-bottom: 10px;
 }
 
+.header-desktop {
+  display: none;
+}
+
 /* === MEDIA QUERIES === */
 
 /* Smartphones pequeños */
