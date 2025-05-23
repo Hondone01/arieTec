@@ -87,6 +87,10 @@ body {
 /* Tablets y pantallas medianas */
 @media (min-width: 768px) {
   /* Aquí podés agregar estilos específicos para tablets si querés */
+   .header-desktop{
+    display: none !important;
+  }
+  
 }
 
 /* === HEADER ESCRITORIO SIN BOOTSTRAP === */
