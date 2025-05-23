@@ -1,7 +1,11 @@
 /* === ESTILOS GENERALES (MOBILE FIRST) === */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #f8f9fa; /* fondo claro base */
+  background-color: #f8f9fa;
   margin-top: 80px; /* compensar el navbar fijo */
   font-family: Arial, sans-serif;
 }
@@ -23,7 +27,7 @@ body {
   border-radius: 5px;
 }
 
-.img-fluid .rounded{
+.img-fluid .rounded {
   border-radius: 5px;
 }
 
@@ -56,35 +60,55 @@ body {
   100% { transform: scale(1); }
 }
 
+/* === FORMULARIO === */
 form {
   max-width: 600px;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 form div {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 form label {
   display: block;
   font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fefefe;
+}
+
+form input[type="file"] {
+  padding: 0.3rem;
 }
 
 form button {
   background-color: #498be2;
   color: white;
   border: none;
-  padding: 0.7rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #367ad3;
 }
 
 .header-desktop {
@@ -93,52 +117,41 @@ form button {
 
 /* === MEDIA QUERIES === */
 
-/* Smartphones pequeños */
 @media (max-width: 374px) {
-  .header-desktop{
+  .header-desktop {
     display: none !important;
   }
-  
 }
 
-/* Smartphones medianos */
 @media (min-width: 375px) and (max-width: 424px) {
- .header-desktop{
+  .header-desktop {
     display: none !important;
   }
-  
 }
 
-/* Smartphones grandes / phablets */
 @media (min-width: 425px) and (max-width: 560px) {
-  .header-desktop{
+  .header-desktop {
     display: none !important;
   }
-  
 }
 
-/* zona intermedia */
 @media (min-width: 461px) and (max-width: 767px) {
-  .header-desktop{
+  .header-desktop {
     display: none !important;
   }
-  
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-desktop {
+    display: none !important;
+  }
 }
 
 
-/* Tablets y pantallas medianas */
-@media (min-width: 768px) and (max-width:1023){
-  /* Aquí podés agregar estilos específicos para tablets si querés */
-  .header-desktop{
-    display: none !important;
-  }
-  
-  
-}
 
 /* === HEADER ESCRITORIO SIN BOOTSTRAP === */
-@media (min-width: 1024px)  and (hover: hover) and (pointer: fine){
-    header.header-desktop {
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  header.header-desktop {
     position: fixed;
     top: 0;
     width: 100%;
@@ -151,7 +164,7 @@ form button {
     z-index: 1000;
   }
 
-  .carousel-img{
+  .carousel-img {
     height: 450px;
   }
 
@@ -205,13 +218,13 @@ form button {
     width: 100%;
   }
 
-  .container{
-  padding-top: 100px;
+  .container {
+    padding-top: 100px;
   }
 
   /* Ocultamos navbar móvil en escritorio */
   .navbar {
     display: none !important;
   }
-
 }
+
