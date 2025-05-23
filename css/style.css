@@ -164,6 +164,10 @@ body {
     width: 100%;
   }
 
+  .container{
+  padding-top: 100px;
+  }
+
   /* Ocultamos navbar móvil en escritorio */
   .navbar {
     display: none !important;
