@@ -105,7 +105,6 @@ form button {
   
 }
 
-
 /* Smartphones grandes / phablets */
 @media (min-width: 425px) and (max-width: 560px) {
   .header-desktop{
@@ -123,7 +122,6 @@ form button {
 }
 
 
-
 /* Tablets y pantallas medianas */
 @media (min-width: 768px) and (max-width:1023){
   /* Aquí podés agregar estilos específicos para tablets si querés */
@@ -135,7 +133,7 @@ form button {
 }
 
 /* === HEADER ESCRITORIO SIN BOOTSTRAP === */
-@media (min-width: 1024px) {
+@media (min-width: 1024px)  and (hover: hover) and (pointer: fine){
     header.header-desktop {
     position: fixed;
     top: 0;
