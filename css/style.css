@@ -12,6 +12,10 @@ body {
   border-radius: 8px;
 }
 
+.header-desktop{
+    display: none !important;
+  }
+
 /* Navbar móvil */
 .navbar {
   background-color: #ffffff !important;
@@ -57,7 +61,7 @@ body {
 /* Smartphones pequeños */
 @media (max-width: 374px) {
   .header-desktop{
-    display: none;
+    display: none !important;
   }
   body {
     background-color: rgb(182, 222, 255);
