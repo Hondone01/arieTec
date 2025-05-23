@@ -12,10 +12,6 @@ body {
   border-radius: 8px;
 }
 
-.header-desktop{
-    display: none !important;
-  }
-
 /* Navbar móvil */
 .navbar {
   background-color: #ffffff !important;
