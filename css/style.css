@@ -56,6 +56,37 @@ body {
   100% { transform: scale(1); }
 }
 
+form {
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #498be2;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
 /* === MEDIA QUERIES === */
 
 /* Smartphones pequeños */
