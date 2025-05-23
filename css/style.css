@@ -56,6 +56,9 @@ body {
 
 /* Smartphones pequeños */
 @media (max-width: 374px) {
+  .header-desktop{
+    display: none;
+  }
   body {
     background-color: rgb(182, 222, 255);
   }
@@ -63,65 +66,25 @@ body {
 
 /* Smartphones medianos */
 @media (min-width: 375px) and (max-width: 424px) {
-  body {
-  background-color: #f8f9fa; /* fondo claro base */
-  margin-top: 80px; /* compensar el navbar fijo */
-  font-family: Arial, sans-serif;
-}
-
-.logoArservice {
-  max-height: 50px;
-  width: auto;
-  border-radius: 8px;
-}
-
-/* Navbar móvil */
-.navbar {
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #ccc;
-}
-
-.navbar-toggler {
-  border: 2px solid #498be2;
-  border-radius: 5px;
-}
-
-/* Botón flotante WhatsApp */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  width: 60px;
-  height: 60px;
-  background-color: #25d366;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: pulse 2s infinite;
-}
-
-.whatsapp-float img {
-  transform: translate(12px, 12px);
-  width: 45px;
-  height: 45px;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-}
-
-/* Smartphones grandes / phablets */
-@media (min-width: 425px) and (max-width: 560px) {
+ .header-desktop{
+    display: none;
+  }
   body {
     background-color: rgb(182, 222, 255);
   }
 }
+
+
+/* Smartphones grandes / phablets */
+@media (min-width: 425px) and (max-width: 560px) {
+  .header-desktop{
+    display: none;
+  }
+  body {
+    background-color: rgb(182, 222, 255);
+  }
+}
+
 
 /* Tablets y pantallas medianas */
 @media (min-width: 768px) {
