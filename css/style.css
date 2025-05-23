@@ -63,9 +63,7 @@ body {
   .header-desktop{
     display: none !important;
   }
-  body {
-    background-color: rgb(182, 222, 255);
-  }
+  
 }
 
 /* Smartphones medianos */
@@ -73,9 +71,7 @@ body {
  .header-desktop{
     display: none !important;
   }
-  body {
-    background-color: rgb(182, 222, 255);
-  }
+  
 }
 
 
@@ -84,9 +80,7 @@ body {
   .header-desktop{
     display: none !important;
   }
-  body {
-    background-color: rgb(182, 222, 255);
-  }
+  
 }
 
 
