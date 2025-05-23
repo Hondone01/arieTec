@@ -67,7 +67,7 @@ body {
 /* Smartphones medianos */
 @media (min-width: 375px) and (max-width: 424px) {
  .header-desktop{
-    display: none;
+    display: none !important;
   }
   body {
     background-color: rgb(182, 222, 255);
@@ -78,7 +78,7 @@ body {
 /* Smartphones grandes / phablets */
 @media (min-width: 425px) and (max-width: 560px) {
   .header-desktop{
-    display: none;
+    display: none !important;
   }
   body {
     background-color: rgb(182, 222, 255);
