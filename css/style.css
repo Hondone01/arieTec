@@ -114,6 +114,15 @@ form button {
   
 }
 
+/* zona intermedia */
+@media (min-width: 461px) and (max-width: 767px) {
+  .header-desktop{
+    display: none !important;
+  }
+  
+}
+
+
 
 /* Tablets y pantallas medianas */
 @media (min-width: 768px) and (max-width:1023){
